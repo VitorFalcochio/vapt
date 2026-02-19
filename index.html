@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vapt Market | Marketplace</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar" aria-label="Topo principal">
+    <div class="container topbar__row">
+      <a href="#" class="brand" aria-label="Página inicial Vapt Market">VaptMarket</a>
+
+      <form class="search" role="search" aria-label="Busca de produtos">
+        <label for="busca" class="sr-only">Buscar por produtos, marcas e categorias</label>
+        <input id="busca" name="busca" type="search" placeholder="Buscar produtos, marcas e muito mais" />
+        <button class="btn btn--search" type="submit">Buscar</button>
+      </form>
+
+      <nav class="account-nav" aria-label="Conta e compras">
+        <a href="#">Entre</a>
+        <a href="#">Cadastre-se</a>
+        <a href="#">Compras</a>
+      </nav>
+
+      <a href="#" class="cart" aria-label="Carrinho">
+        <svg viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false">
+          <path d="M3 4h2l2.2 10.2a2 2 0 0 0 2 1.6h7.9a2 2 0 0 0 1.9-1.4L21 7H7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="10" cy="19" r="1.6" fill="currentColor" />
+          <circle cx="17" cy="19" r="1.6" fill="currentColor" />
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <nav class="categories" aria-label="Categorias principais">
+    <div class="container">
+      <ul class="categories__list">
+        <li><a href="#" class="is-active">Ofertas</a></li>
+        <li><a href="#">Eletrônicos</a></li>
+        <li><a href="#">Moda</a></li>
+        <li><a href="#">Casa e Cozinha</a></li>
+        <li><a href="#">Esportes</a></li>
+        <li><a href="#">Beleza</a></li>
+        <li><a href="#">Mercado</a></li>
+        <li><a href="#">Brinquedos</a></li>
+        <li><a href="#">Pet</a></li>
+        <li><a href="#">Automotivo</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <article class="hero__banner">
+          <p class="hero__kicker">Semana turbo de descontos</p>
+          <h1 id="hero-title">Promoções imperdíveis para renovar sua rotina</h1>
+          <p class="hero__text">Economize em produtos selecionados com entrega rápida para todo o Brasil.</p>
+          <div class="hero__actions">
+            <a href="#ofertas" class="btn btn--primary">Ver ofertas</a>
+            <a href="#mais-vendidos" class="btn btn--secondary">Explorar categorias</a>
+          </div>
+          <img src="assets/hero-art.svg" alt="Ilustração promocional" class="hero__art" />
+        </article>
+
+        <aside class="hero__info" aria-label="Vantagens de compra">
+          <h2>Benefícios de hoje</h2>
+          <ul>
+            <li>
+              <strong>Frete grátis</strong>
+              <span>Em milhares de produtos a partir de R$ 99</span>
+            </li>
+            <li>
+              <strong>Parcelamento</strong>
+              <span>Até 12x sem juros em itens selecionados</span>
+            </li>
+            <li>
+              <strong>Ofertas do dia</strong>
+              <span>Preços atualizados com estoque limitado</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="ofertas" aria-labelledby="ofertas-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="ofertas-title">Ofertas do dia</h2>
+          <a href="#" class="section__link">Ver tudo</a>
+        </header>
+
+        <div class="skeleton" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
+
+        <div class="products-grid">
+          <article class="product-card">
+            <span class="badge">OFERTA</span>
+            <figure><img src="assets/product-1.svg" alt="Fone Bluetooth VaptSound" /></figure>
+            <h3>Fone Bluetooth VaptSound</h3>
+            <p class="price"><s>R$ 299,90</s> <strong>R$ 189,90</strong> <em>-36%</em></p>
+            <p class="stars" aria-label="4,8 de 5 estrelas">★★★★☆</p>
+            <button class="btn btn--card" type="button">Adicionar ao carrinho</button>
+          </article>
+
+          <article class="product-card">
+            <span class="badge">OFERTA</span>
+            <figure><img src="assets/product-2.svg" alt="Notebook Slim 14 polegadas" /></figure>
+            <h3>Notebook Slim 14"</h3>
+            <p class="price"><s>R$ 3.499,00</s> <strong>R$ 2.799,00</strong> <em>-20%</em></p>
+            <p class="stars" aria-label="4,7 de 5 estrelas">★★★★☆</p>
+            <button class="btn btn--card" type="button">Adicionar ao carrinho</button>
+          </article>
+
+          <article class="product-card">
+            <span class="badge">OFERTA</span>
+            <figure><img src="assets/product-3.svg" alt="Tênis Runner Pro" /></figure>
+            <h3>Tênis Runner Pro</h3>
+            <p class="price"><s>R$ 399,90</s> <strong>R$ 249,90</strong> <em>-37%</em></p>
+            <p class="stars" aria-label="4,9 de 5 estrelas">★★★★★</p>
+            <button class="btn btn--card" type="button">Adicionar ao carrinho</button>
+          </article>
+
+          <article class="product-card">
+            <span class="badge">OFERTA</span>
+            <figure><img src="assets/product-4.svg" alt="Smartwatch Fit Pulse" /></figure>
+            <h3>Smartwatch Fit Pulse</h3>
+            <p class="price"><s>R$ 799,00</s> <strong>R$ 599,00</strong> <em>-25%</em></p>
+            <p class="stars" aria-label="4,6 de 5 estrelas">★★★★☆</p>
+            <button class="btn btn--card" type="button">Adicionar ao carrinho</button>
+          </article>
+
+          <article class="product-card">
+            <span class="badge">OFERTA</span>
+            <figure><img src="assets/product-5.svg" alt="Cafeteira Press Plus" /></figure>
+            <h3>Cafeteira Press Plus</h3>
+            <p class="price"><s>R$ 459,00</s> <strong>R$ 319,00</strong> <em>-30%</em></p>
+            <p class="stars" aria-label="4,5 de 5 estrelas">★★★★☆</p>
+            <button class="btn btn--card" type="button">Adicionar ao carrinho</button>
+          </article>
+
+          <article class="product-card">
+            <span class="badge">OFERTA</span>
+            <figure><img src="assets/product-6.svg" alt="Mochila Tech Pro" /></figure>
+            <h3>Mochila Tech Pro</h3>
+            <p class="price"><s>R$ 279,90</s> <strong>R$ 179,90</strong> <em>-35%</em></p>
+            <p class="stars" aria-label="4,8 de 5 estrelas">★★★★☆</p>
+            <button class="btn btn--card" type="button">Adicionar ao carrinho</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mais-vendidos" aria-labelledby="mais-vendidos-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="mais-vendidos-title">Mais vendidos</h2>
+          <a href="#" class="section__link">Ver ranking</a>
+        </header>
+
+        <div class="snap-row" role="list" aria-label="Lista horizontal de mais vendidos">
+          <article class="mini-card" role="listitem">
+            <img src="assets/product-1.svg" alt="Fone sem fio Lite" />
+            <h3>Fone sem fio Lite</h3>
+            <p>R$ 139,90</p>
+          </article>
+          <article class="mini-card" role="listitem">
+            <img src="assets/product-2.svg" alt="Monitor 24 polegadas" />
+            <h3>Monitor 24" IPS</h3>
+            <p>R$ 899,00</p>
+          </article>
+          <article class="mini-card" role="listitem">
+            <img src="assets/product-3.svg" alt="Kit treino em casa" />
+            <h3>Kit treino em casa</h3>
+            <p>R$ 219,90</p>
+          </article>
+          <article class="mini-card" role="listitem">
+            <img src="assets/product-4.svg" alt="Pulseira inteligente" />
+            <h3>Pulseira inteligente</h3>
+            <p>R$ 199,90</p>
+          </article>
+          <article class="mini-card" role="listitem">
+            <img src="assets/product-5.svg" alt="Liquidificador turbo" />
+            <h3>Liquidificador turbo</h3>
+            <p>R$ 289,00</p>
+          </article>
+          <article class="mini-card" role="listitem">
+            <img src="assets/product-6.svg" alt="Mochila urbana" />
+            <h3>Mochila urbana</h3>
+            <p>R$ 159,90</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="lojas-title">
+      <div class="container">
+        <header class="section__head">
+          <h2 id="lojas-title">Lojas oficiais</h2>
+          <a href="#" class="section__link">Conhecer todas</a>
+        </header>
+
+        <ul class="stores" aria-label="Marcas oficiais">
+          <li>
+            <a href="#" class="store-badge" data-tooltip="TechNova">
+              <img src="assets/brand-1.svg" alt="Marca TechNova" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="store-badge" data-tooltip="Sportix">
+              <img src="assets/brand-2.svg" alt="Marca Sportix" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="store-badge" data-tooltip="CasaMix">
+              <img src="assets/brand-3.svg" alt="Marca CasaMix" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="store-badge" data-tooltip="PetVille">
+              <img src="assets/brand-4.svg" alt="Marca PetVille" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="store-badge" data-tooltip="AudioMax">
+              <img src="assets/brand-5.svg" alt="Marca AudioMax" />
+            </a>
+          </li>
+          <li>
+            <a href="#" class="store-badge" data-tooltip="NeoWear">
+              <img src="assets/brand-6.svg" alt="Marca NeoWear" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <section>
+        <h2>Institucional</h2>
+        <ul>
+          <li><a href="#">Quem somos</a></li>
+          <li><a href="#">Trabalhe conosco</a></li>
+          <li><a href="#">Termos de uso</a></li>
+          <li><a href="#">Privacidade</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Ajuda</h2>
+        <ul>
+          <li><a href="#">Central de atendimento</a></li>
+          <li><a href="#">Trocas e devoluções</a></li>
+          <li><a href="#">Status do pedido</a></li>
+          <li><a href="#">Segurança</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Minha Conta</h2>
+        <ul>
+          <li><a href="#">Meus dados</a></li>
+          <li><a href="#">Endereços</a></li>
+          <li><a href="#">Cartões</a></li>
+          <li><a href="#">Favoritos</a></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Redes</h2>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="subfooter">
+      <p>© 2026 Vapt Market. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
