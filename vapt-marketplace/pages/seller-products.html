@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos da loja | VAPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/seller.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="container dashboard-shell">
+        <aside class="dashboard-sidebar">
+          <nav class="panel dashboard-nav">
+            <a href="./seller-dashboard.html">Visao geral</a>
+            <a class="is-active" href="./seller-products.html">Produtos</a>
+            <a href="./seller-orders.html">Pedidos</a>
+            <a href="./seller-invoices.html">Notas fiscais</a>
+          </nav>
+        </aside>
+        <section class="dashboard-main">
+          <article class="panel">
+            <div class="section-heading">
+              <div>
+                <h1 class="section-title">Produtos da loja</h1>
+                <p class="section-subtitle">Area de gestao do catalogo com acesso rapido ao cadastro dedicado.</p>
+              </div>
+              <a class="primary-button" href="./product-register.html">Novo produto</a>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="section-heading">
+              <div>
+                <h1 class="section-title">Gestao de produtos</h1>
+                <p class="section-subtitle">Formulario base para cadastro e edicao com visual mais limpo.</p>
+              </div>
+            </div>
+            <div class="form-grid">
+              <label class="field"><span>Nome do produto</span><input type="text" placeholder="Ex.: Fone Orbit" /></label>
+              <label class="field"><span>Categoria</span><select><option>Eletronicos</option><option>Casa e decor</option><option>Moda</option></select></label>
+              <label class="field"><span>Preco</span><input type="text" placeholder="R$ 0,00" /></label>
+              <label class="field"><span>Estoque</span><input type="number" placeholder="0" /></label>
+              <label class="field full"><span>Descricao</span><textarea placeholder="Descreva o produto da loja"></textarea></label>
+            </div>
+            <div class="action-row" style="margin-top: 18px;">
+              <button class="primary-button" type="button">Salvar produto</button>
+              <button class="ghost-button" type="button">Cancelar</button>
+            </div>
+          </article>
+          <article class="panel table-shell">
+            <table>
+              <thead>
+                <tr><th>Produto</th><th>Status</th><th>Preco</th><th>Estoque</th></tr>
+              </thead>
+              <tbody data-seller-products></tbody>
+            </table>
+          </article>
+        </section>
+      </div>
+    </main>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/seller.js"></script>
+  </body>
+</html>

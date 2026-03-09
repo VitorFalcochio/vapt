@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus pedidos | VAPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <a class="brand" href="./index.html"><span class="brand-mark">V</span><span class="brand-copy"><strong>VAPT</strong><span>pedido e acompanhamento</span></span></a>
+          <div class="header-actions">
+            <a class="quick-link" href="./my-account.html">Conta</a>
+            <a class="quick-link is-active" href="./my-orders.html">Meus pedidos</a>
+            <a class="quick-link" href="./products.html">Continuar comprando</a>
+          </div>
+          <button class="icon-button mobile-toggle" type="button" data-menu-toggle>☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="panel table-shell">
+          <div class="section-heading">
+            <div>
+              <h1 class="section-title">Meus pedidos</h1>
+              <p class="section-subtitle">Tela dedicada do comprador com tabela mais clara e status visuais.</p>
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Pedido</th>
+                <th>Loja</th>
+                <th>Status</th>
+                <th>Pagamento</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody data-customer-orders></tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container"><div class="footer-bottom"><span>Pedidos VAPT</span><span><span data-current-year></span></span></div></div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../assets/js/supabase.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/customer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAPT | Marketplace para compra rapida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/home.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-notice">
+        <div class="container">
+          <span>VAPT entrega experiencia de marketplace clara, rapida e confiavel.</span>
+          <span>Seller verificado • Checkout fluido • Atendimento comercial</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="header-main">
+          <a class="brand" href="./index.html" aria-label="VAPT">
+            <span class="brand-mark">V</span>
+            <span class="brand-copy">
+              <strong>VAPT</strong>
+              <span>marketplace de alta conversao</span>
+            </span>
+          </a>
+          <div class="header-search">
+            <form class="search-bar" data-search-form>
+              <input type="search" name="q" placeholder="Busque produtos, categorias e lojas" />
+              <button class="primary-button" type="submit">Buscar</button>
+            </form>
+          </div>
+          <div class="header-actions">
+            <a class="quick-link" href="./my-account.html">Minha conta</a>
+            <a class="quick-link" href="./seller-dashboard.html">Painel loja</a>
+            <a class="quick-link cart-link" href="./cart.html">Carrinho <span class="cart-count" data-cart-count>0</span></a>
+          </div>
+          <button class="icon-button mobile-toggle" type="button" aria-label="Abrir menu" data-menu-toggle>☰</button>
+        </div>
+        <nav class="header-nav">
+          <a class="nav-item is-active" href="./index.html">Inicio</a>
+          <a class="nav-item" href="./products.html">Categorias</a>
+          <a class="nav-item" href="./products.html?q=ofertas">Ofertas</a>
+          <a class="nav-item" href="./my-orders.html">Meus pedidos</a>
+          <a class="nav-item" href="./admin-dashboard.html">Admin</a>
+          <a class="nav-item" href="./courier-dashboard.html">Entregas</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="hero-grid section">
+          <article class="hero-banner">
+            <span class="eyebrow">Marketplace com identidade propria</span>
+            <h1>Compra profissional, rapida e segura.</h1>
+            <p>
+              A nova VAPT foi redesenhada para parecer um produto real: busca forte, cards mais comerciais,
+              estrutura modular e base pronta para evoluir com Supabase, IA e operacao multiusuario.
+            </p>
+            <div class="hero-actions">
+              <a class="primary-button" href="./products.html">Explorar produtos</a>
+              <a class="ghost-button" href="./seller-dashboard.html">Ver dashboard da loja</a>
+            </div>
+            <div class="hero-tags" style="margin-top: 20px;">
+              <span class="eyebrow">Entrega nacional</span>
+              <span class="eyebrow">Lojas verificadas</span>
+              <span class="eyebrow">Fluxo escalavel</span>
+            </div>
+          </article>
+
+          <aside class="hero-side">
+            <article class="panel">
+              <span class="pill brand">Top buscas do dia</span>
+              <div class="mini-list" data-home-mini style="margin-top: 16px;"></div>
+            </article>
+            <article class="panel">
+              <span class="pill brand">Operacao VAPT</span>
+              <div class="stack" style="margin-top: 16px;">
+                <div class="summary-line"><span>Lojas ativas</span><strong>124</strong></div>
+                <div class="summary-line"><span>Pedidos em curso</span><strong>726</strong></div>
+                <div class="summary-line"><span>SLA medio</span><strong>24h</strong></div>
+              </div>
+            </article>
+          </aside>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <div>
+              <h2 class="section-title">Categorias em destaque</h2>
+              <p class="section-subtitle">Acesso rapido a colecoes com linguagem visual mais comercial.</p>
+            </div>
+          </div>
+          <div class="categories-grid" data-home-categories></div>
+        </section>
+
+        <section class="section showcase-grid">
+          <article class="panel deal-card">
+            <div class="stack">
+              <span class="pill brand">Campanha da semana</span>
+              <h2 class="section-title">Mais clareza para vitrine, filtros e decisao de compra.</h2>
+              <p class="section-subtitle">
+                Home redesenhada com hero comercial, blocos mais organizados e base pronta para conectar vitrine
+                dinamica do Supabase.
+              </p>
+              <div class="action-row">
+                <a class="primary-button" href="./product.html?slug=fone-bluetooth-orbit">Ver produto em destaque</a>
+                <a class="secondary-button" href="./checkout.html">Experimentar checkout</a>
+              </div>
+            </div>
+            <div class="deal-media">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80" alt="Produto em destaque da VAPT" />
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="section-heading">
+              <div>
+                <h2 class="section-title">Leitura comercial</h2>
+                <p class="section-subtitle">O foco agora e conversao com clareza visual.</p>
+              </div>
+            </div>
+            <div class="stack">
+              <div class="summary-line"><span>Busca em destaque</span><strong>Sim</strong></div>
+              <div class="summary-line"><span>Grid profissional</span><strong>Sim</strong></div>
+              <div class="summary-line"><span>Base de dashboards</span><strong>Ativa</strong></div>
+              <div class="summary-line"><span>Preparado para IA</span><strong>Estruturado</strong></div>
+            </div>
+          </article>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <div>
+              <h2 class="section-title">Produtos selecionados</h2>
+              <p class="section-subtitle">Cards mais solidos, hover mais limpo e leitura imediata de preco e loja.</p>
+            </div>
+            <a class="secondary-button" href="./products.html">Ver catalogo completo</a>
+          </div>
+          <div class="product-grid" data-home-products></div>
+        </section>
+
+        <section class="section">
+          <div class="trust-strip">
+            <article class="panel trust-card">
+              <strong>Confianca operacional</strong>
+              <span class="meta-text">Visual premium e base pronta para logs, auditoria e crescimento da startup.</span>
+            </article>
+            <article class="panel trust-card">
+              <strong>Navegacao intuitiva</strong>
+              <span class="meta-text">Header comercial, menus claros e responsividade mais consistente.</span>
+            </article>
+            <article class="panel trust-card">
+              <strong>Escalabilidade</strong>
+              <span class="meta-text">Assets modularizados para futuras areas de IA, pagamentos e dashboards.</span>
+            </article>
+            <article class="panel trust-card">
+              <strong>Base para QA</strong>
+              <span class="meta-text">Estrutura mais simples de revisar, testar e expandir sem gambiarras.</span>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <a class="brand" href="./index.html">
+              <span class="brand-mark">V</span>
+              <span class="brand-copy"><strong>VAPT</strong><span>marketplace de alta conversao</span></span>
+            </a>
+            <p>Projeto reorganizado para ficar com cara de startup real e com base pronta para crescer.</p>
+          </div>
+          <div class="footer-col">
+            <strong>Marketplace</strong>
+            <a href="./products.html">Catalogo</a>
+            <a href="./cart.html">Carrinho</a>
+            <a href="./checkout.html">Checkout</a>
+          </div>
+          <div class="footer-col">
+            <strong>Operacao</strong>
+            <a href="./seller-dashboard.html">Lojista</a>
+            <a href="./courier-dashboard.html">Entregador</a>
+            <a href="./admin-dashboard.html">Admin</a>
+          </div>
+          <div class="footer-col">
+            <strong>Conta</strong>
+            <a href="./login.html">Entrar</a>
+            <a href="./register.html">Criar conta</a>
+            <a href="./my-account.html">Minha conta</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>VAPT Marketplace</span>
+          <span>Estrutura visual revisada • <span data-current-year></span></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../assets/js/supabase.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/home.js"></script>
+  </body>
+</html>

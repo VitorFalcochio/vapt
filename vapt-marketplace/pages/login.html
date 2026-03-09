@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | VAPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/auth.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <a class="brand" href="./index.html">
+            <span class="brand-mark">V</span>
+            <span class="brand-copy"><strong>VAPT</strong><span>login seguro e comercial</span></span>
+          </a>
+          <div class="header-actions">
+            <a class="quick-link" href="./products.html">Catalogo</a>
+            <a class="quick-link is-active" href="./login.html">Entrar</a>
+            <a class="quick-link" href="./register.html">Cadastro de cliente</a>
+          </div>
+          <button class="icon-button mobile-toggle" type="button" data-menu-toggle>☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container auth-layout">
+        <aside class="auth-aside">
+          <span class="eyebrow">Area de acesso</span>
+          <h1>Entre para acompanhar pedidos, conta e favoritos.</h1>
+          <p>Fluxo visual pronto para conectar autenticacao real no Supabase sem refazer a experiencia.</p>
+          <div class="auth-benefits" style="margin-top: 22px;">
+            <article>
+              <strong>Pedidos centralizados</strong>
+              <div class="auth-footnote">Acompanhe status, pagamento e historico em uma area unica.</div>
+            </article>
+            <article>
+              <strong>Conta e enderecos</strong>
+              <div class="auth-footnote">Base preparada para editar perfil e enderecos com CEP automatizado.</div>
+            </article>
+          </div>
+        </aside>
+
+        <section class="content-card auth-card">
+          <div class="section-heading">
+            <div>
+              <h1 class="section-title">Entrar na VAPT</h1>
+              <p class="section-subtitle">Acesso rapido para compradores, lojistas, entregadores e administracao.</p>
+            </div>
+          </div>
+
+          <form class="auth-form" data-auth-form="login">
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="voce@empresa.com" required />
+            </label>
+            <label class="field">
+              <span>Senha</span>
+              <input type="password" name="password" placeholder="Sua senha" required />
+            </label>
+
+            <div class="auth-inline">
+              <label class="auth-check"><input type="checkbox" name="remember_me" /> Manter conectado neste dispositivo</label>
+              <a class="meta-text" href="./register.html">Ainda nao tenho conta</a>
+            </div>
+
+            <button class="primary-button" type="submit">Entrar na conta</button>
+          </form>
+
+          <div class="auth-meta">
+            <article>
+              <strong>Ambiente pronto para Supabase Auth</strong>
+              <div class="auth-footnote">O front ja esta organizado para troca do mock por login real com sessao persistente.</div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <span>Login VAPT</span>
+          <span><span data-current-year></span></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../assets/js/supabase.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/auth.js"></script>
+  </body>
+</html>

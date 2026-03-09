@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard do lojista | VAPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/seller.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <a class="brand" href="./index.html"><span class="brand-mark">V</span><span class="brand-copy"><strong>VAPT</strong><span>painel do lojista</span></span></a>
+          <div class="header-actions">
+            <a class="quick-link" href="./products.html">Marketplace</a>
+            <a class="quick-link is-active" href="./seller-dashboard.html">Dashboard</a>
+          </div>
+          <button class="icon-button mobile-toggle" type="button" data-menu-toggle>☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container dashboard-shell">
+        <aside class="dashboard-sidebar">
+          <article class="panel">
+            <strong>Operacao da loja</strong>
+            <p class="section-subtitle">Estrutura pronta para catalogo, pedidos e notas fiscais.</p>
+          </article>
+          <nav class="panel dashboard-nav">
+            <a class="is-active" href="./seller-dashboard.html">Visao geral</a>
+            <a href="./seller-products.html">Produtos</a>
+            <a href="./seller-orders.html">Pedidos</a>
+            <a href="./seller-invoices.html">Notas fiscais</a>
+          </nav>
+        </aside>
+
+        <section class="dashboard-main">
+          <article class="panel dashboard-hero">
+            <div>
+              <span class="pill brand">Loja VAPT Prime</span>
+              <h1 class="section-title" style="margin-top: 14px;">Painel profissional para operar a loja com clareza.</h1>
+              <p class="section-subtitle">Revisado para parecer uma operacao real, e nao um bloco temporario.</p>
+            </div>
+            <div class="dashboard-hero-actions">
+              <a class="primary-button" href="./seller-products.html">Cadastrar produto</a>
+              <a class="secondary-button" href="./seller-invoices.html">Area fiscal</a>
+            </div>
+          </article>
+
+          <div class="metrics-grid" data-seller-metrics></div>
+
+          <div class="dashboard-section-grid">
+            <article class="panel table-shell">
+              <div class="section-heading">
+                <div>
+                  <h2 class="section-title">Produtos recentes</h2>
+                  <p class="section-subtitle">Visao mais clara do catalogo ativo.</p>
+                </div>
+              </div>
+              <table>
+                <thead>
+                  <tr><th>Produto</th><th>Status</th><th>Preco</th><th>Estoque</th></tr>
+                </thead>
+                <tbody data-seller-products></tbody>
+              </table>
+            </article>
+
+            <article class="panel">
+              <div class="section-heading">
+                <div>
+                  <h2 class="section-title">Acao rapida</h2>
+                  <p class="section-subtitle">Atalhos da operacao da loja.</p>
+                </div>
+              </div>
+              <div class="stack">
+                <div class="summary-line"><span>Pedidos aguardando status</span><strong>12</strong></div>
+                <div class="summary-line"><span>Produtos sem imagem</span><strong>3</strong></div>
+                <div class="summary-line"><span>Notas pendentes</span><strong>7</strong></div>
+              </div>
+            </article>
+          </div>
+
+          <article class="panel table-shell">
+            <div class="section-heading">
+              <div>
+                <h2 class="section-title">Pedidos recebidos</h2>
+                <p class="section-subtitle">Tabela mais limpa para acompanhar o operacional.</p>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr><th>Pedido</th><th>Cliente</th><th>Status</th><th>Total</th></tr>
+              </thead>
+              <tbody data-seller-orders></tbody>
+            </table>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer"><div class="container"><div class="footer-bottom"><span>Lojista VAPT</span><span><span data-current-year></span></span></div></div></footer>
+
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/seller.js"></script>
+  </body>
+</html>

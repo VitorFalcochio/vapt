@@ -1,0 +1,67 @@
+.featured-band {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) 320px;
+  gap: 20px;
+}
+
+.catalog-shell {
+  display: grid;
+  grid-template-columns: 290px minmax(0, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.featured-copy {
+  background:
+    radial-gradient(circle at top right, rgba(31, 120, 255, 0.12), transparent 32%),
+    linear-gradient(180deg, #ffffff 0%, #f6faff 100%);
+}
+
+.featured-panel {
+  background:
+    radial-gradient(circle at top left, rgba(31, 120, 255, 0.12), transparent 30%),
+    linear-gradient(180deg, #0f4fb7 0%, #1262db 100%);
+  color: #ffffff;
+}
+
+.featured-panel .section-subtitle,
+.featured-panel .summary-line {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.filters-panel {
+  align-self: start;
+  position: sticky;
+  top: 132px;
+}
+
+.filters-form,
+.filter-group {
+  display: grid;
+  gap: 16px;
+}
+
+.catalog-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.toolbar-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 1120px) {
+  .featured-band,
+  .catalog-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .filters-panel {
+    position: static;
+  }
+}

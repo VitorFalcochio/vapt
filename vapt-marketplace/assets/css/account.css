@@ -1,0 +1,29 @@
+.account-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.account-overview {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+}
+
+.account-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.address-card,
+.order-card {
+  display: grid;
+  gap: 12px;
+}
+
+@media (max-width: 980px) {
+  .account-overview,
+  .account-sections {
+    grid-template-columns: 1fr;
+  }
+}

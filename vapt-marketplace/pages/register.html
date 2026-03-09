@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de cliente | VAPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/auth.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <a class="brand" href="./index.html">
+            <span class="brand-mark">V</span>
+            <span class="brand-copy"><strong>VAPT</strong><span>cadastro de cliente</span></span>
+          </a>
+          <div class="header-actions">
+            <a class="quick-link" href="./products.html">Catalogo</a>
+            <a class="quick-link" href="./login.html">Entrar</a>
+            <a class="quick-link is-active" href="./register.html">Cadastro de cliente</a>
+          </div>
+          <button class="icon-button mobile-toggle" type="button" data-menu-toggle>☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container auth-layout">
+        <aside class="auth-aside">
+          <span class="eyebrow">Onboarding do comprador</span>
+          <h1>Crie sua conta para comprar com rapidez na VAPT.</h1>
+          <p>Formulario mais completo para cadastro do cliente, com dados essenciais e base pronta para checkout futuro.</p>
+          <div class="auth-benefits" style="margin-top: 22px;">
+            <article>
+              <strong>Endereco e pedidos</strong>
+              <div class="auth-footnote">Fluxo preparado para salvar enderecos, favoritos e historico de compras.</div>
+            </article>
+            <article>
+              <strong>Experiencia mais confiavel</strong>
+              <div class="auth-footnote">Sem visual de template simples. A pagina foi estruturada como produto real.</div>
+            </article>
+          </div>
+        </aside>
+
+        <section class="content-card auth-card">
+          <div class="section-heading">
+            <div>
+              <h1 class="section-title">Cadastro de cliente</h1>
+              <p class="section-subtitle">Preencha seus dados para criar a conta de comprador.</p>
+            </div>
+          </div>
+
+          <form class="auth-form" data-auth-form="register">
+            <div class="form-grid">
+              <label class="field">
+                <span>Nome completo</span>
+                <input type="text" name="name" placeholder="Seu nome completo" required />
+              </label>
+              <label class="field">
+                <span>CPF</span>
+                <input type="text" name="cpf" placeholder="000.000.000-00" required />
+              </label>
+              <label class="field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="voce@empresa.com" required />
+              </label>
+              <label class="field">
+                <span>Celular</span>
+                <input type="tel" name="phone" placeholder="(11) 99999-9999" />
+              </label>
+              <label class="field">
+                <span>Senha</span>
+                <input type="password" name="password" placeholder="Crie uma senha" required />
+              </label>
+              <label class="field">
+                <span>Confirmar senha</span>
+                <input type="password" name="password_confirmation" placeholder="Repita a senha" required />
+              </label>
+            </div>
+
+            <label class="auth-check">
+              <input type="checkbox" name="accept_terms" required />
+              Li e concordo com os termos e com a politica de privacidade.
+            </label>
+
+            <button class="primary-button" type="submit">Criar minha conta</button>
+          </form>
+
+          <div class="auth-meta">
+            <article>
+              <strong>Proxima integracao</strong>
+              <div class="auth-footnote">Esta tela ja esta pronta para enviar o cadastro do cliente para `profiles` no Supabase.</div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <span>Cadastro de cliente VAPT</span>
+          <span><span data-current-year></span></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../assets/js/supabase.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/auth.js"></script>
+  </body>
+</html>

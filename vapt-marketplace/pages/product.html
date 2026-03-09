@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produto | VAPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/product.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <a class="brand" href="./index.html"><span class="brand-mark">V</span><span class="brand-copy"><strong>VAPT</strong><span>pagina de alta conversao</span></span></a>
+          <div class="header-search">
+            <form class="search-bar" data-search-form>
+              <input type="search" name="q" placeholder="Busque por produto, categoria ou loja" />
+              <button class="primary-button" type="submit">Buscar</button>
+            </form>
+          </div>
+          <div class="header-actions">
+            <a class="quick-link" href="./products.html">Catalogo</a>
+            <a class="quick-link cart-link" href="./cart.html">Carrinho <span class="cart-count" data-cart-count>0</span></a>
+          </div>
+          <button class="icon-button mobile-toggle" type="button" data-menu-toggle>☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <section class="product-page">
+          <article class="panel">
+            <div class="gallery-main"><img data-product-main-image src="" alt="" /></div>
+            <div class="gallery-strip" data-product-gallery></div>
+          </article>
+
+          <section class="panel">
+            <div class="stack">
+              <span class="pill brand" data-product-category></span>
+              <div>
+                <h1 class="section-title" data-product-title></h1>
+                <div class="detail-meta" style="margin-top: 10px;">
+                  <span><strong style="color: var(--warning);">★★★★★</strong> <span data-product-rating></span></span>
+                  <span data-product-reviews></span>
+                  <span>SKU VAPT-MVP-01</span>
+                </div>
+              </div>
+              <div class="detail-list">
+                <div>
+                  <div class="price" data-product-price></div>
+                  <div class="old-price" data-product-old-price></div>
+                </div>
+                <div class="installments" data-product-installments></div>
+                <div class="status success" data-product-stock></div>
+              </div>
+              <p class="muted" data-product-description></p>
+              <div class="panel">
+                <strong>Diferenciais operacionais</strong>
+                <div class="detail-meta" style="margin-top: 12px;">
+                  <span>Entrega integrada</span>
+                  <span>Estrutura para IA</span>
+                  <span>Base para favoritos</span>
+                  <span>Checkout modular</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <aside class="panel purchase-panel">
+            <div class="buy-stack">
+              <div>
+                <div class="price" data-product-price></div>
+                <div class="installments" data-product-installments></div>
+              </div>
+              <button class="primary-button" type="button" data-add-cart>Comprar agora</button>
+              <button class="secondary-button" type="button" data-add-cart>Adicionar ao carrinho</button>
+              <div class="seller-box">
+                <strong data-product-store></strong>
+                <p class="muted" style="margin: 8px 0 0;">Loja posicionada com mais confianca e leitura comercial mais madura.</p>
+              </div>
+              <div class="detail-meta">
+                <span>Pagamento flexivel</span>
+                <span>Troca facilitada</span>
+                <span data-product-store></span>
+              </div>
+            </div>
+          </aside>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <span>Pagina de produto VAPT</span>
+          <span>Experiencia redesenhada • <span data-current-year></span></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../assets/js/supabase.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/product-details.js"></script>
+  </body>
+</html>

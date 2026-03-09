@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard do entregador | VAPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/courier.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="container dashboard-shell">
+        <aside class="dashboard-sidebar">
+          <nav class="panel dashboard-nav">
+            <a class="is-active" href="./courier-dashboard.html">Visao geral</a>
+            <a href="./courier-deliveries.html">Minhas entregas</a>
+          </nav>
+        </aside>
+        <section class="dashboard-main">
+          <article class="panel">
+            <div class="section-heading">
+              <div>
+                <h1 class="section-title">Painel do entregador</h1>
+                <p class="section-subtitle">Tela mais direta para uso em operacao de rota.</p>
+              </div>
+            </div>
+          </article>
+          <div class="delivery-grid" data-courier-deliveries></div>
+        </section>
+      </div>
+    </main>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/courier.js"></script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+:root {
+  --brand-900: #0b3d91;
+  --brand-800: #0f4fb7;
+  --brand-700: #1262db;
+  --brand-600: #1f78ff;
+  --brand-500: #4b93ff;
+  --brand-100: #eaf3ff;
+  --brand-050: #f5f9ff;
+  --surface: #ffffff;
+  --surface-alt: #f7faff;
+  --background: #eef3f9;
+  --border: #dbe5f0;
+  --border-strong: #bfd1e5;
+  --text: #16324f;
+  --text-soft: #5f7894;
+  --text-muted: #7d93ac;
+  --success: #1f9d68;
+  --warning: #f3a11f;
+  --danger: #dc4f57;
+  --info: #0f7dc8;
+  --shadow-xs: 0 10px 30px rgba(14, 39, 74, 0.05);
+  --shadow-sm: 0 16px 32px rgba(14, 39, 74, 0.08);
+  --shadow-md: 0 24px 60px rgba(14, 39, 74, 0.12);
+  --radius-sm: 14px;
+  --radius-md: 22px;
+  --radius-lg: 30px;
+  --container: 1240px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(31, 120, 255, 0.12), transparent 24%),
+    linear-gradient(180deg, #f7fbff 0%, var(--background) 100%);
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+select,
+textarea {
+  color: var(--text);
+}
+
+textarea {
+  resize: vertical;
+}
+
+main {
+  display: block;
+}
+
+.container {
+  width: min(calc(100% - 32px), var(--container));
+  margin: 0 auto;
+}
+
+.page-shell {
+  padding: 28px 0 80px;
+}
+
+.section {
+  margin-top: 32px;
+}
+
+.section:first-child {
+  margin-top: 0;
+}
+
+.section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.section-title,
+.section-heading h1,
+.section-heading h2,
+.section-heading h3 {
+  margin: 0;
+}
+
+.section-title {
+  font-size: clamp(1.55rem, 2.2vw, 2.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.section-subtitle {
+  margin: 8px 0 0;
+  color: var(--text-soft);
+  line-height: 1.5;
+}
+
+.surface,
+.panel,
+.card,
+.content-card,
+.summary-box,
+.hero-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+}
+
+.panel,
+.content-card,
+.summary-box {
+  padding: 24px;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.stack {
+  display: grid;
+  gap: 18px;
+}
+
+.split-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.muted {
+  color: var(--text-soft);
+}
+
+.price {
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.old-price {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  text-decoration: line-through;
+}
+
+.installments,
+.small-note,
+.meta-text {
+  color: var(--text-soft);
+  font-size: 0.94rem;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.status::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.status.success {
+  color: var(--success);
+  background: #ecfaf3;
+}
+
+.status.warning {
+  color: #b37009;
+  background: #fff5e3;
+}
+
+.status.info {
+  color: var(--info);
+  background: #ebf6ff;
+}
+
+.status.danger {
+  color: var(--danger);
+  background: #ffedf0;
+}
+
+.empty-state {
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  min-height: 220px;
+  padding: 32px;
+  text-align: center;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-md);
+  background: linear-gradient(180deg, #fbfdff 0%, #f4f8fc 100%);
+}
+
+@media (max-width: 960px) {
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(calc(100% - 20px), var(--container));
+  }
+
+  .page-shell {
+    padding-top: 20px;
+    padding-bottom: 56px;
+  }
+
+  .panel,
+  .content-card,
+  .summary-box {
+    padding: 18px;
+  }
+}

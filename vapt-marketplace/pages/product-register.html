@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de produto | VAPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/seller.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <a class="brand" href="./seller-dashboard.html">
+            <span class="brand-mark">V</span>
+            <span class="brand-copy"><strong>VAPT</strong><span>cadastro de produto</span></span>
+          </a>
+          <div class="header-actions">
+            <a class="quick-link" href="./seller-dashboard.html">Dashboard</a>
+            <a class="quick-link" href="./seller-products.html">Produtos</a>
+            <a class="quick-link is-active" href="./product-register.html">Cadastrar produto</a>
+          </div>
+          <button class="icon-button mobile-toggle" type="button" data-menu-toggle>☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container dashboard-shell">
+        <aside class="dashboard-sidebar">
+          <nav class="panel dashboard-nav">
+            <a href="./seller-dashboard.html">Visao geral</a>
+            <a href="./seller-products.html">Produtos</a>
+            <a href="./seller-orders.html">Pedidos</a>
+            <a href="./seller-invoices.html">Notas fiscais</a>
+            <a class="is-active" href="./product-register.html">Cadastrar produto</a>
+          </nav>
+        </aside>
+
+        <section class="dashboard-main">
+          <article class="panel">
+            <div class="section-heading">
+              <div>
+                <h1 class="section-title">Cadastro de produto</h1>
+                <p class="section-subtitle">Tela dedicada para novos itens da loja, com estrutura mais profissional e pronta para CRUD real.</p>
+              </div>
+            </div>
+          </article>
+
+          <div class="product-register-layout">
+            <form class="panel stack" data-product-register-form>
+              <div class="form-grid">
+                <label class="field">
+                  <span>Nome do produto</span>
+                  <input type="text" name="product_name" placeholder="Ex.: Fone Bluetooth Orbit" required />
+                </label>
+                <label class="field">
+                  <span>Categoria</span>
+                  <select name="category">
+                    <option>Eletronicos</option>
+                    <option>Casa e decor</option>
+                    <option>Moda</option>
+                    <option>Esporte</option>
+                  </select>
+                </label>
+                <label class="field">
+                  <span>Preco</span>
+                  <input type="text" name="price" placeholder="R$ 0,00" required />
+                </label>
+                <label class="field">
+                  <span>Estoque inicial</span>
+                  <input type="number" name="stock" placeholder="0" required />
+                </label>
+                <label class="field full">
+                  <span>Resumo comercial</span>
+                  <input type="text" name="headline" placeholder="Frase curta para destacar o produto na vitrine" />
+                </label>
+                <label class="field full">
+                  <span>Descricao</span>
+                  <textarea name="description" placeholder="Descreva beneficios, uso e diferenciais do produto"></textarea>
+                </label>
+              </div>
+
+              <div class="upload-dropzone">
+                <div>
+                  <strong>Area de imagem do produto</strong>
+                  <div class="auth-footnote" style="margin-top: 8px;">Pronta para integrar upload em `product_images` no Supabase Storage.</div>
+                </div>
+              </div>
+
+              <div class="action-row">
+                <button class="primary-button" type="submit">Salvar produto</button>
+                <a class="ghost-button" href="./seller-products.html">Voltar para produtos</a>
+              </div>
+            </form>
+
+            <aside class="stack">
+              <article class="panel">
+                <strong>Checklist rapido</strong>
+                <div class="stack" style="margin-top: 16px;">
+                  <div class="summary-line"><span>Nome claro</span><strong>Obrigatorio</strong></div>
+                  <div class="summary-line"><span>Preco definido</span><strong>Obrigatorio</strong></div>
+                  <div class="summary-line"><span>Estoque inicial</span><strong>Obrigatorio</strong></div>
+                  <div class="summary-line"><span>Imagem principal</span><strong>Recomendado</strong></div>
+                </div>
+              </article>
+
+              <article class="panel">
+                <strong>Preparado para o backend</strong>
+                <div class="auth-footnote" style="margin-top: 10px;">
+                  Esta tela ja conversa bem com a estrutura futura de `products`, `categories` e `product_images`.
+                </div>
+              </article>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <span>Cadastro de produto VAPT</span>
+          <span><span data-current-year></span></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/product-register.js"></script>
+  </body>
+</html>

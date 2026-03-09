@@ -1,0 +1,16 @@
+.delivery-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.delivery-card {
+  display: grid;
+  gap: 12px;
+}
+
+.delivery-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  color: var(--text-soft);
+}

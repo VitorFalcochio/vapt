@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho | VAPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/cart.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <a class="brand" href="./index.html"><span class="brand-mark">V</span><span class="brand-copy"><strong>VAPT</strong><span>carrinho otimizado</span></span></a>
+          <div class="header-search">
+            <form class="search-bar" data-search-form>
+              <input type="search" name="q" placeholder="Adicione mais produtos antes de fechar" />
+              <button class="primary-button" type="submit">Buscar</button>
+            </form>
+          </div>
+          <div class="header-actions">
+            <a class="quick-link" href="./products.html">Continuar comprando</a>
+            <a class="quick-link cart-link" href="./cart.html">Carrinho <span class="cart-count" data-cart-count>0</span></a>
+          </div>
+          <button class="icon-button mobile-toggle" type="button" data-menu-toggle>☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container cart-layout">
+        <section class="panel">
+          <div class="section-heading">
+            <div>
+              <h1 class="section-title">Seu carrinho</h1>
+              <p class="section-subtitle">Organizacao mais clara para itens, quantidades e decisao final de compra.</p>
+            </div>
+          </div>
+          <div class="cart-items" data-cart-items></div>
+        </section>
+
+        <aside class="summary-box">
+          <div class="section-heading">
+            <div>
+              <h2 class="section-title">Resumo do pedido</h2>
+              <p class="section-subtitle">Estrutura preparada para frete, cupom e pagamento.</p>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="summary-line"><span>Subtotal</span><strong data-cart-subtotal>R$ 0,00</strong></div>
+            <div class="summary-line"><span>Frete</span><strong>A calcular</strong></div>
+            <div class="summary-divider"></div>
+            <div class="summary-line"><span>Total</span><strong data-cart-total>R$ 0,00</strong></div>
+            <div class="cart-actions">
+              <a class="primary-button" href="./checkout.html">Ir para checkout</a>
+              <a class="ghost-button" href="./products.html">Voltar ao catalogo</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <span>Carrinho VAPT</span>
+          <span>UX e responsividade revisadas • <span data-current-year></span></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../assets/js/supabase.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/cart.js"></script>
+  </body>
+</html>

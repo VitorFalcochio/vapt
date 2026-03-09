@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedidos da loja | VAPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <div class="container dashboard-shell">
+        <aside class="dashboard-sidebar">
+          <nav class="panel dashboard-nav">
+            <a href="./seller-dashboard.html">Visao geral</a>
+            <a href="./seller-products.html">Produtos</a>
+            <a class="is-active" href="./seller-orders.html">Pedidos</a>
+            <a href="./seller-invoices.html">Notas fiscais</a>
+          </nav>
+        </aside>
+        <section class="dashboard-main">
+          <article class="panel table-shell">
+            <div class="section-heading">
+              <div>
+                <h1 class="section-title">Pedidos recebidos</h1>
+                <p class="section-subtitle">Base para atualizacao de status e operacao de fulfillment.</p>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr><th>Pedido</th><th>Cliente</th><th>Status</th><th>Total</th></tr>
+              </thead>
+              <tbody data-seller-orders></tbody>
+            </table>
+          </article>
+        </section>
+      </div>
+    </main>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/seller.js"></script>
+  </body>
+</html>

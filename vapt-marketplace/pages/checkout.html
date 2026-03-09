@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | VAPT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/global.css" />
+    <link rel="stylesheet" href="../assets/css/layout.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+    <link rel="stylesheet" href="../assets/css/cart.css" />
+    <link rel="stylesheet" href="../assets/css/checkout.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <div class="header-main">
+          <a class="brand" href="./index.html"><span class="brand-mark">V</span><span class="brand-copy"><strong>VAPT</strong><span>checkout comercial</span></span></a>
+          <div class="header-actions">
+            <a class="quick-link" href="./cart.html">Voltar ao carrinho</a>
+            <a class="quick-link cart-link" href="./cart.html">Itens <span class="cart-count" data-cart-count>0</span></a>
+          </div>
+          <button class="icon-button mobile-toggle" type="button" data-menu-toggle>☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container checkout-layout">
+        <section class="panel">
+          <div class="checkout-steps">
+            <span class="checkout-step is-active">1. Entrega</span>
+            <span class="checkout-step">2. Pagamento</span>
+            <span class="checkout-step">3. Revisao</span>
+          </div>
+          <div class="section-heading">
+            <div>
+              <h1 class="section-title">Finalizar compra</h1>
+              <p class="section-subtitle">Fluxo simplificado, claro e pronto para ligacao futura com CEP e pagamento real.</p>
+            </div>
+          </div>
+
+          <form class="checkout-form">
+            <div class="form-grid">
+              <label class="field"><span>CEP</span><input type="text" placeholder="00000-000" /></label>
+              <label class="field"><span>Numero</span><input type="text" placeholder="123" /></label>
+              <label class="field full"><span>Rua</span><input type="text" placeholder="Nome da rua" /></label>
+              <label class="field"><span>Bairro</span><input type="text" placeholder="Centro" /></label>
+              <label class="field"><span>Cidade</span><input type="text" placeholder="Sao Paulo" /></label>
+              <label class="field"><span>Estado</span><input type="text" placeholder="SP" /></label>
+              <label class="field full"><span>Complemento</span><input type="text" placeholder="Apartamento, bloco ou referencia" /></label>
+            </div>
+
+            <div class="payment-options">
+              <label class="payment-option is-selected" data-payment-option>
+                <div class="split-content">
+                  <strong>Pix</strong>
+                  <input type="radio" name="payment_method" checked />
+                </div>
+                <span class="meta-text">Pagamento instantaneo com confirmacao automatizada futura.</span>
+              </label>
+              <label class="payment-option" data-payment-option>
+                <div class="split-content">
+                  <strong>Cartao de credito</strong>
+                  <input type="radio" name="payment_method" />
+                </div>
+                <span class="meta-text">Estrutura pronta para gateway quando o backend for conectado.</span>
+              </label>
+              <label class="payment-option" data-payment-option>
+                <div class="split-content">
+                  <strong>Pagar na entrega</strong>
+                  <input type="radio" name="payment_method" />
+                </div>
+                <span class="meta-text">Modo util para o MVP e para operacoes com cobranca local.</span>
+              </label>
+            </div>
+
+            <button class="primary-button" type="button" data-checkout-submit>Concluir pedido</button>
+          </form>
+        </section>
+
+        <aside class="summary-box">
+          <div class="section-heading">
+            <div>
+              <h2 class="section-title">Resumo</h2>
+              <p class="section-subtitle">Conferencia final do pedido.</p>
+            </div>
+          </div>
+          <div class="stack">
+            <div class="summary-line"><span>Subtotal</span><strong data-checkout-subtotal>R$ 0,00</strong></div>
+            <div class="summary-line"><span>Frete</span><strong>A calcular</strong></div>
+            <div class="summary-divider"></div>
+            <div class="summary-line"><span>Total</span><strong data-checkout-total>R$ 0,00</strong></div>
+            <span class="meta-text">A etapa visual ja esta pronta para integrar CEP, orders e payment_method no banco.</span>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bottom">
+          <span>Checkout VAPT</span>
+          <span>Pronto para evolucao tecnica • <span data-current-year></span></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="../assets/js/supabase.js"></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/utils.js"></script>
+    <script src="../assets/js/toast.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/checkout.js"></script>
+  </body>
+</html>
